@@ -1,0 +1,16 @@
+import React, { Component } from 'react';
+
+
+class Products extends Component {
+  render() {
+    return (
+      <div className="products-container">
+        <p>
+            Products !    
+        </p>
+      </div>
+    );
+  }
+}
+
+export default Products;
