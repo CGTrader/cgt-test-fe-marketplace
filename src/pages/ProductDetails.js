@@ -4,11 +4,9 @@ import React, { Component } from 'react';
 class ProductDetails extends Component {
   render() {
     return (
-      <div className="productdetails-container">
-        <p>
-            Product Details!    
-        </p>
-      </div>
+      <>
+      <h1 className='productDetails-container'>PRODUCT DETAILS</h1>
+      </>
     );
   }
 }
