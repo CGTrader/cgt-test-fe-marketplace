@@ -6,7 +6,7 @@ class Cart extends Component {
     return (
       <>
         <h1 className='cart-container'>CART</h1>
-        <p className="mt-5 text-warning text-center">Cart without producst ! =S </p>;
+        <p>Cart without producst ! =S </p>;
       </>
     );
   }

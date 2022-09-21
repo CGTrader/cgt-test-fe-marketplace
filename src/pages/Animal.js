@@ -5,7 +5,7 @@ class Animal extends Component {
  render(){
   return(
     <>
-      <h1 className='marketing animals'>ANIMALS</h1>
+      <h1 className='animals'>ANIMALS</h1>
     </>
   );
  } 
