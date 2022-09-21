@@ -23,42 +23,6 @@
   }
   
   .home {
-    background-image: url('./pictures/img-1.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .services {
-    background-image: url('./pictures/img-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .characters {
-    background-image: url('./pictures/img-3.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .contact-us {
-    background-image: url('./pictures/img-4.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .cart-container {
     background-image: url('./pictures/astronaut.jpg');
     background-position: center;
     background-size: cover;
@@ -67,8 +31,44 @@
     font-size: 100px;
   }
   
+  .services {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .characters {
+    background-color: black;
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .contact-us {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
+  .cart-container {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
+  
   .animals {
-    background-image: url('./pictures/img-6.jpg');
+    background-color: black;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -77,7 +77,7 @@
   }
   
   .space {
-    background-image: url('./pictures/alien.jpg');
+    background-color: black;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
   }
 
   .about {
-    background-image: url('./pictures/img-5.jpg');
+    background-color: black;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,7 +95,7 @@
   }
 
   .cars {
-    background-image: url('./pictures/img-5.jpg');
+    background-color: black;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
