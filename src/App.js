@@ -1,81 +1,46 @@
-import pictureA from './a.jpg';
-import pictureB from './b.jpg';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import './App.css';
 
-function cartItems() {
-  return []
-}
+import Navbar from './components/Header/Navbar';
+
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Animal from './pages/Animal';
+import Car from './pages/Car';
+import Character from './pages/Characters'
+import Space from './pages/Space';
+import ProductDetails from './pages/ProductDetails';
+import About from './pages/About';
+import ContactUs from './pages/ContactUs';
+import Cart from './pages/Cart';
+
 
 function App() {
   return (
-    <main>
-      <header>
-        90s shop
-        <nav>
-          <ul style={{listStyleType: 'none', display: 'flex'}}>
-            <li><a href="/">Home</a></li>
-            |
-            <li><a href="/cart">Cart ({cartItems().length})</a></li>
-          </ul>
-        </nav>
-        <hr/>
-      </header>
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route exact path="/product/:id" component={ ProductDetails } />
+          <Route exact path="/cart" component={ Cart } />
+          <Route exact path='/services' component={Services} />
+          <Route exact path='/contact-us' component={ContactUs} />
+          <Route exact path='/animal' component={Animal} />
+          <Route exact path='/car' component={Car} />
+          <Route exact path='/character' component={Character} />
+          <Route exact path='/space' component={Space} />
+          <Route exact path='/about' component={About} />
+        </Switch>
+      </BrowserRouter>
+      </div>
+    );
+  }
 
-      {
-        window.location.pathname === '/' && (
-          <div>
-            Welcome to our shop!
+export default App; 
 
-            <p>
-              You are probably interested in <a href="/products/a">A</a>.
-            </p>
 
-            <p>
-              Check out the newest product <a href="/products/b">B</a>!
-            </p>
-          </div>
-        )
-      }
-      {
-        window.location.pathname === '/products/b' && (
-          <div>
-            <h1>Product B</h1>
-            <p>Price: 30 USD</p>
 
-            <button onClick={() => console.warn('Not implemented!')}>
-              Add to cart
-            </button>
 
-            <div><img src={pictureB} width={640}/></div>
-          </div>
-        )
-      }
-      {
-        window.location.pathname === '/products/a' && (
-          <div>
-            <h1>Product A</h1>
-            <p>Price: 10 USD</p>
 
-            <button onClick={() => console.warn('Not implemented!')}>
-              Add to cart
-            </button>
-
-            <div><img src={pictureA} width={640}/></div>
-          </div>
-        )
-      }
-      {
-        window.location.pathname === '/cart' && (
-          <div>
-            Are you ready to purchase these?
-
-            <ul>
-              {cartItems().map((cartItem) => <li key={cartItem}>{cartItem}</li>)}
-            </ul>
-          </div>
-        )
-      }
-    </main>
-  );
-}
-
-export default App;
