@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux';
-import myReducer from './myReducer';
+import addReducer from './addReducer';
 
 
-// combineReducers recebe todos os reducers criados, mesmo que tenha apenas 1 // 
-const rootReducer = combineReducers({ myReducer });
+const rootReducer = combineReducers({addReducer});
 
 export default rootReducer;
